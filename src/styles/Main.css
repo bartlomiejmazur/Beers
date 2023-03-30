@@ -15,21 +15,22 @@ main {
   width: 220px;
   margin: 15px 30px;
   padding: 10px;
+  text-decoration: none;
+  color: #0b0b0b;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .beer-card__container {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  gap: 10px;
   margin: 10px;
   align-items: center;
 }
 
 .beer-card__img {
-  width: 100%;
+  width: auto;
   height: 150px;
-  background-color: #ddd;
 }
 
 .beer-card__title {
