@@ -6,7 +6,7 @@ export default function CardSkeleton({cards}) {
   return Array(cards)
     .fill(0)
     .map(item => (
-      <div className="beer-card">
+      <div className="beer-card" key={Math.random()}>
         <div className="beer-card__container ">
           <div className="beer-card__img ">
             <Skeleton width={200} height={300} />
