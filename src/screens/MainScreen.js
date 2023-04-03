@@ -3,13 +3,14 @@ import {client} from '../utils/api-client'
 import {FaAngleLeft, FaAngleRight} from 'react-icons/fa'
 
 import '../styles/Main.css'
-import '../styles/Nav.css'
 
 import {useAsync} from '../utils/hooks'
 import BeerCard from '../components/BeerCard'
+import CardSkeleton from '../components/CardSkeleton'
+import Error from '../components/Error'
 
 const MainScreen = () => {
-  const {data, error, run, isLoading, isError, isSuccess} = useAsync()
+  const {data, error, run, isError, isSuccess, isLoading} = useAsync()
 
   const [page, setPage] = React.useState(1)
 
@@ -21,20 +22,14 @@ const MainScreen = () => {
     <>
       <main>
         <div className="wrapper">
-          {isError ? (
-            <div>
-              <p>There was an error:</p>
-              <pre>{error.message}</pre>
-            </div>
-          ) : null}
+          {isLoading ? <CardSkeleton cards={12} /> : null}
+          {isError ? <Error error={error} /> : null}
 
-          {isSuccess ? (
-            data?.length ? (
-              data.map(beer => <BeerCard beer={beer} key={beer.id} />)
-            ) : (
-              <p>Go back to first page</p>
-            )
-          ) : null}
+          {isSuccess
+            ? data?.length
+              ? data.map(beer => <BeerCard beer={beer} key={beer.id} />)
+              : null
+            : null}
         </div>
       </main>
 
