@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/beers/static/css/main.6d3b674f.css",
+    "main.js": "/beers/static/js/main.3d1e8baa.js",
+    "static/media/network-no-route-svgrepo-com.svg": "/beers/static/media/network-no-route-svgrepo-com.36fe548c30048ab10b20caa036602345.svg",
+    "static/media/error-svgrepo-com.svg": "/beers/static/media/error-svgrepo-com.28bcc95f60f4f9055c976163a580b051.svg",
+    "index.html": "/beers/index.html",
+    "main.6d3b674f.css.map": "/beers/static/css/main.6d3b674f.css.map",
+    "main.3d1e8baa.js.map": "/beers/static/js/main.3d1e8baa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6d3b674f.css",
+    "static/js/main.3d1e8baa.js"
+  ]
+}
