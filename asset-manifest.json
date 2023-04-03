@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Beers/static/css/main.6d3b674f.css",
-    "main.js": "/Beers/static/js/main.b238278d.js",
+    "main.js": "/Beers/static/js/main.25a29950.js",
     "static/media/network-no-route-svgrepo-com.svg": "/Beers/static/media/network-no-route-svgrepo-com.36fe548c30048ab10b20caa036602345.svg",
     "static/media/error-svgrepo-com.svg": "/Beers/static/media/error-svgrepo-com.28bcc95f60f4f9055c976163a580b051.svg",
     "index.html": "/Beers/index.html",
     "main.6d3b674f.css.map": "/Beers/static/css/main.6d3b674f.css.map",
-    "main.b238278d.js.map": "/Beers/static/js/main.b238278d.js.map"
+    "main.25a29950.js.map": "/Beers/static/js/main.25a29950.js.map"
   },
   "entrypoints": [
     "static/css/main.6d3b674f.css",
-    "static/js/main.b238278d.js"
+    "static/js/main.25a29950.js"
   ]
 }
