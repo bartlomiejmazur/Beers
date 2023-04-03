@@ -1,0 +1,25 @@
+.notfound-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.notfound-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.notdound-img {
+  width: 400px;
+}
+
+.notfound-link {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 700px) {
+  .notdound-img {
+    width: 300px;
+  }
+}
