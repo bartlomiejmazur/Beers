@@ -22,7 +22,7 @@ export default function BeerScreen() {
       {isError ? <Error error={error} /> : null}
       {isSuccess
         ? data.map(beer => (
-            <>
+            <div key={beer.id}>
               <div className="product">
                 <img src={beer.image_url} alt="" className="product__image" />
                 <div className="product__content">
@@ -44,7 +44,7 @@ export default function BeerScreen() {
                   <div>
                     <div className="product__ingrendients-subname">Malt</div>
                     {beer.ingredients.malt.map(el => (
-                      <p>
+                      <p key={Math.random()}>
                         {`${el.name}: ${el.amount.value} ${el.amount.unit}`}{' '}
                       </p>
                     ))}
@@ -53,14 +53,14 @@ export default function BeerScreen() {
                   <div>
                     <div className="product__ingrendients-subname">Hops</div>
                     {beer.ingredients.hops.map(el => (
-                      <p>
+                      <p key={Math.random()}>
                         {`${el.name}: ${el.amount.value} ${el.amount.unit}`}{' '}
                       </p>
                     ))}
                   </div>
                 </div>
               </div>
-            </>
+            </div>
           ))
         : null}
     </section>
