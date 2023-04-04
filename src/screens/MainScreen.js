@@ -12,9 +12,12 @@ import Error from '../components/Error'
 const MainScreen = () => {
   const {data, error, run, isError, isSuccess, isLoading} = useAsync()
 
-  const [page, setPage] = React.useState(1)
+  const [page, setPage] = React.useState(
+    () => JSON.parse(window.localStorage.getItem('page')) || 1,
+  )
 
   React.useEffect(() => {
+    window.localStorage.setItem('page', JSON.stringify(page))
     run(client(`beers?page=${page}&per_page=12`))
   }, [page, run])
 
