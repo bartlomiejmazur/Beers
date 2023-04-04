@@ -5,6 +5,7 @@ import {FaAngleLeft, FaAngleRight} from 'react-icons/fa'
 import '../styles/Main.css'
 
 import {useAsync} from '../utils/useAsync'
+import {useLocalStorageState} from '../utils/useLocalStorageState'
 import BeerCard from '../components/BeerCard'
 import CardSkeleton from '../components/CardSkeleton'
 import Error from '../components/Error'
@@ -12,12 +13,9 @@ import Error from '../components/Error'
 const MainScreen = () => {
   const {data, error, run, isError, isSuccess, isLoading} = useAsync()
 
-  const [page, setPage] = React.useState(
-    () => JSON.parse(window.localStorage.getItem('page')) || 1,
-  )
+  const [page, setPage] = useLocalStorageState('page', 1)
 
   React.useEffect(() => {
-    window.localStorage.setItem('page', JSON.stringify(page))
     run(client(`beers?page=${page}&per_page=12`))
   }, [page, run])
 
