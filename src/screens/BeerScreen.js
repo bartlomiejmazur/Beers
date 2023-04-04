@@ -1,6 +1,6 @@
 import React from 'react'
 import {useParams} from 'react-router'
-import {useAsync} from '../utils/hooks'
+import {useAsync} from '../utils/useAsync'
 import {client} from '../utils/api-client'
 
 import PageSkeleton from '../components/PageSkeleton'

@@ -4,7 +4,7 @@ import {FaAngleLeft, FaAngleRight} from 'react-icons/fa'
 
 import '../styles/Main.css'
 
-import {useAsync} from '../utils/hooks'
+import {useAsync} from '../utils/useAsync'
 import BeerCard from '../components/BeerCard'
 import CardSkeleton from '../components/CardSkeleton'
 import Error from '../components/Error'
