@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Beers/static/css/main.6d3b674f.css",
-    "main.js": "/Beers/static/js/main.cbfd8e2e.js",
-    "static/media/network-no-route-svgrepo-com.svg": "/Beers/static/media/network-no-route-svgrepo-com.36fe548c30048ab10b20caa036602345.svg",
-    "static/media/error-svgrepo-com.svg": "/Beers/static/media/error-svgrepo-com.28bcc95f60f4f9055c976163a580b051.svg",
-    "index.html": "/Beers/index.html",
-    "main.6d3b674f.css.map": "/Beers/static/css/main.6d3b674f.css.map",
-    "main.cbfd8e2e.js.map": "/Beers/static/js/main.cbfd8e2e.js.map"
+    "main.css": "/static/css/main.6d3b674f.css",
+    "main.js": "/static/js/main.d457d32e.js",
+    "static/media/network-no-route-svgrepo-com.svg": "/static/media/network-no-route-svgrepo-com.36fe548c30048ab10b20caa036602345.svg",
+    "static/media/error-svgrepo-com.svg": "/static/media/error-svgrepo-com.28bcc95f60f4f9055c976163a580b051.svg",
+    "index.html": "/index.html",
+    "main.6d3b674f.css.map": "/static/css/main.6d3b674f.css.map",
+    "main.d457d32e.js.map": "/static/js/main.d457d32e.js.map"
   },
   "entrypoints": [
     "static/css/main.6d3b674f.css",
-    "static/js/main.cbfd8e2e.js"
+    "static/js/main.d457d32e.js"
   ]
 }
